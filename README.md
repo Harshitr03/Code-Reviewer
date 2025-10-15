@@ -9,11 +9,11 @@ The backend is built with **Python (Flask)**, and the LLM analysis is powered by
 ---
 
 ## Features
-- ** File Intake:** A Flask API endpoint (`/api/review`) handles code file uploads.
-- ** LLM Integration:** Uses the `gemini-2.5-flash-preview-05-20` model for deep, structured code analysis.
-- ** Structured Output:** JSON schema for standardized review metrics — *Readability* and *Modularity* scores (0–100), key suggestions, and potential bugs.
-- ** In-Memory Storage:** Reports stored temporarily in memory (can be upgraded to Firestore or PostgreSQL).
-- ** Interactive Dashboard:** Simple HTML/JavaScript frontend to upload files and view reports.
+- **File Intake:** A Flask API endpoint (`/api/review`) handles code file uploads.
+- **LLM Integration:** Uses the `gemini-2.5-flash-preview-05-20` model for deep, structured code analysis.
+- **Structured Output:** JSON schema for standardized review metrics — *Readability* and *Modularity* scores (0–100), key suggestions, and potential bugs.
+- **In-Memory Storage:** Reports stored temporarily in memory (can be upgraded to Firestore or PostgreSQL).
+- **Interactive Dashboard:** Simple HTML/JavaScript frontend to upload files and view reports.
 
 ---
 
@@ -44,9 +44,9 @@ pip install Flask requests
 ├── server.py
 └── templates/
     └── index.html
-
-</details>
 ```
+</details>
+
 ## API Endpoints
 ```bash
 | **Endpoint**              | **Method** | **Description**                         | **Body**                       | **Response**                            |
