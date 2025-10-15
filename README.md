@@ -37,11 +37,9 @@ API Key Configuration
 The application is configured to read the API key from the environment variable GEMINI_API_KEY.
 
 Local Setup (Linux/macOS):
-
 export GEMINI_API_KEY="YOUR_API_KEY_HERE"
 
 Local Setup (Windows PowerShell):
-
 $env:GEMINI_API_KEY="YOUR_API_KEY_HERE"
 
 Note: If you are using this code in a sandbox environment, the API key may be handled automatically.
@@ -50,55 +48,16 @@ Running the Application
 Ensure you are in the directory containing server.py.
 
 Run the application:
-
 python server.py
-
 The application will start on http://127.0.0.1:5000/.
 
 API Endpoints
-Endpoint
-
-Method
-
-Description
-
-Request Body
-
-Response
-
-/
-
-GET
-
-Serves the HTML frontend dashboard.
-
-None
-
-HTML
-
-/api/review
-
-POST
-
-Submits a code file for review by the LLM.
-
-multipart/form-data with code_file
-
-{"report_id": "...", "message": "..."}
-
-/api/report/<report_id>
-
-GET
-
-Retrieves the full structured JSON report.
-
-None
-
-JSON object containing review data and raw_code.
+Endpoint                Method      Description                                     Request Body                            Response
+/                       GET         Serves the HTML frontend dashboard.             None                                    HTML
+/api/review             POST        Submits a code file for review by the LLM.      multipart/form-data with code_file      {"report_id": "...", "message": "..."}
+/api/report/<report_id> GET         Retrieves the full structured JSON report.      None                                    JSON object containing review data and raw_code.
 
 LLM Structure and Cost Control
 The review_code_with_llm function uses a structured prompt and JSON schema to maximize the quality and consistency of the review. For cost control, remember:
-
 Free Tier: If billing is not enabled, usage is hard-capped daily, preventing unexpected charges.
-
 Quotas: If billing is enabled, you can set custom Requests per Day (RPD) limits for the Generative Language API in the Google Cloud Console.
