@@ -49,10 +49,10 @@ pip install Flask requests
 
 ## API Endpoints
 ```bash
-| **Endpoint**              | **Method** | **Description**                         | **Body**                       | **Response**                            |
-|----------------------------|------------|------------------------------------------|--------------------------------|------------------------------------------|
-| `/`                        | GET        | Serves the HTML dashboard                | None                           | HTML page                               |
-| `/api/review`              | POST       | Submits a code file for review by Gemini | `multipart/form-data` (file)   | JSON `{ report_id, message }`           |
-| `/api/report/<report_id>`  | GET        | Retrieves a structured JSON review report| None                           | JSON (full structured report)           |
+| Endpoint                 | Method     | Description                              | Body                           | Response                            |
+|--------------------------|------------|------------------------------------------|--------------------------------|-------------------------------------|
+| /                        | GET        | Serves the HTML dashboard                | None                           | HTML page                           |
+| /api/review              | POST       | Submits a code file for review by Gemini | multipart/form-data (file)   | JSON { report_id, message }         |
+| /api/report/<report_id>  | GET        | Retrieves a structured JSON review report| None                           | JSON (full structured report)       |
 
 ```
