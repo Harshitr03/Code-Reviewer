@@ -58,6 +58,5 @@ pip install Flask requests
 ```
 
 ## Demo Link
-[Demo Link](https://code-reviewer-bgsa.onrender.com)
----
-[Demo Video](https://drive.google.com/file/d/1ZKR3x0BcorIH4GO28LJeFSsH1DBvHSDI/view?usp=sharing)
+- [Demo Link](https://code-reviewer-bgsa.onrender.com)
+- [Demo Video](https://drive.google.com/file/d/1ZKR3x0BcorIH4GO28LJeFSsH1DBvHSDI/view?usp=sharing)
