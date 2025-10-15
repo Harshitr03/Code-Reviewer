@@ -32,7 +32,6 @@ The backend is built with **Python (Flask)**, and the LLM analysis is powered by
 - **Gemini API Key** — Obtain one from [Google AI Studio](https://aistudio.google.com/).
 
 ### Install Dependencies
-```bash
 pip install Flask requests
 ---
 
