@@ -9,11 +9,11 @@ The backend is built with **Python (Flask)**, and the LLM analysis is powered by
 ---
 
 ## Features
-- **📂 File Intake:** A Flask API endpoint (`/api/review`) handles code file uploads.
-- **🧠 LLM Integration:** Uses the `gemini-2.5-flash-preview-05-20` model for deep, structured code analysis.
-- **📊 Structured Output:** JSON schema for standardized review metrics — *Readability* and *Modularity* scores (0–100), key suggestions, and potential bugs.
-- **💾 In-Memory Storage:** Reports stored temporarily in memory (can be upgraded to Firestore or PostgreSQL).
-- **💻 Interactive Dashboard:** Simple HTML/JavaScript frontend to upload files and view reports.
+- ** File Intake:** A Flask API endpoint (`/api/review`) handles code file uploads.
+- ** LLM Integration:** Uses the `gemini-2.5-flash-preview-05-20` model for deep, structured code analysis.
+- ** Structured Output:** JSON schema for standardized review metrics — *Readability* and *Modularity* scores (0–100), key suggestions, and potential bugs.
+- ** In-Memory Storage:** Reports stored temporarily in memory (can be upgraded to Firestore or PostgreSQL).
+- ** Interactive Dashboard:** Simple HTML/JavaScript frontend to upload files and view reports.
 
 ---
 
@@ -32,21 +32,27 @@ The backend is built with **Python (Flask)**, and the LLM analysis is powered by
 - **Gemini API Key** — Obtain one from [Google AI Studio](https://aistudio.google.com/).
 
 ### Install Dependencies
+```bash
 pip install Flask requests
+```
 ---
+<details>
+<summary> Click to view Project Structure</summary>
 
-<details> <summary> Click to view Project Structure</summary>
+```bash
 /llm-code-reviewer
-├── server.py               # Flask backend handling file upload & LLM review
-├── requirements.txt        # Dependencies (optional)
-├── README.md               # Project documentation
+├── server.py
 └── templates/
-    └── index.html          # Dashboard UI for uploading code files
+    └── index.html
 
 </details>
+```
 ## API Endpoints
+```bash
 | **Endpoint**              | **Method** | **Description**                         | **Body**                       | **Response**                            |
 |----------------------------|------------|------------------------------------------|--------------------------------|------------------------------------------|
 | `/`                        | GET        | Serves the HTML dashboard                | None                           | HTML page                               |
 | `/api/review`              | POST       | Submits a code file for review by Gemini | `multipart/form-data` (file)   | JSON `{ report_id, message }`           |
 | `/api/report/<report_id>`  | GET        | Retrieves a structured JSON review report| None                           | JSON (full structured report)           |
+
+```
