@@ -56,3 +56,6 @@ pip install Flask requests
 | /api/report/<report_id>  | GET        | Retrieves a structured JSON review report| None                           | JSON (full structured report)       |
 
 ```
+
+## Demo Link
+[text](https://drive.google.com/file/d/1ZKR3x0BcorIH4GO28LJeFSsH1DBvHSDI/view?usp=sharing)
