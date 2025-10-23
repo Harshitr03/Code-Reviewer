@@ -39,7 +39,10 @@ pip install Flask requests
 ## Project Structure
 ```bash
 /llm-code-reviewer
-├── server.py
+├── code_review.py
+├── code_review_llm.py
+├── static/
+|   └── script.js
 └── templates/
     └── index.html
 ```
