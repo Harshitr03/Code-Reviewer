@@ -36,13 +36,23 @@ The backend is built with **Python (Flask)**, and the LLM analysis is powered by
 pip install Flask requests
 ```
 ---
+### Run App
+-**MacOS**
+```bash
+python3 code_review.py
+```
+-**Windows**
+```bash
+python code_review.py
+```
+---
 ## Project Structure
 ```bash
 /llm-code-reviewer
 ├── code_review.py
 ├── code_review_llm.py
 ├── static/
-|   └── script.js
+   └── script.js
 └── templates/
     └── index.html
 ```
