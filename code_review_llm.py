@@ -3,7 +3,7 @@ import time
 import os
 import requests
 import json
-API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent"
+API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent"
 API_KEY = os.environ.get("GEMINI_API_KEY", "")
 
 def review_code_with_llm(code_content: str, filename: str) -> Dict[str, Any]:
