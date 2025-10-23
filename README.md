@@ -36,7 +36,7 @@ The backend is built with **Python (Flask)**, and the LLM analysis is powered by
 pip install Flask requests
 ```
 ---
-
+**Project Structure**
 ```bash
 /llm-code-reviewer
 ├── server.py
@@ -58,4 +58,4 @@ pip install Flask requests
 - [Demo Link](https://code.bidk.in/)
 - [Demo Video](https://drive.google.com/file/d/1ZKR3x0BcorIH4GO28LJeFSsH1DBvHSDI/view?usp=sharing)
 
-**By Harshit Rawat, 22BCE2803
+**By Harshit Rawat, 22BCE2803**
